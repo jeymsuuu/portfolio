@@ -64,7 +64,6 @@ body {
 }
 
 .navbar {
-    background-color: 10px solid #F5F5DC;
     position: relative;
     top: 0%;
     left: 5%;
@@ -73,6 +72,14 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+.navbar,
+.navbar * {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 
 .navbar a {
     cursor: pointer;
@@ -124,7 +131,7 @@ body {
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background-color: #F5F5DC;
+    background-color: white;
     display: flex;
     align-items: center;
     padding: 70px 10% 0;
@@ -144,10 +151,11 @@ body {
 }
 
 .profile-pic {
-    height: 500px;
-    object-fit: cover;
+    height: 400px;
+    object-fit: cover; 
     border-radius: 50%;
     border: 10x solid #654321;
+    box-shadow: 0 10px 25px #654321 ;
     animation: slideLeft 1s ease forwards;
     animation-delay: 0.3 ease;
 }
@@ -250,7 +258,7 @@ body {
 .btn {
     display: inline-block;
     padding: 12px 28px;
-    background-color: #F5F5DC;
+    background-color: white;
     border-radius: 40px;
     font-size: 16px;
     color: #654321;

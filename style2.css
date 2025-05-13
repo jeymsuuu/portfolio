@@ -5,7 +5,7 @@
     justify-content: space-between;
     cursor: default;
     padding: 60px 10%;
-    background-color: #F5F5DC;
+    background-color: white;
     flex-wrap: wrap;
     min-height: 100vh; /* Ensure full section height */
 }
@@ -24,7 +24,6 @@
     font-weight: 800;
     margin-bottom: 10px;
     color: #A08963;
-    animation: slideLeft 1s ease forwards;
 }
 
 .abouttext h2 span {
@@ -52,7 +51,6 @@
     display: flex;
     justify-content: center;   /* Horizontally center image */
     align-items: center;       /* Vertically center image */
-    animation: slideLeft 1s ease forwards;
 }
 
 .aboutimg img {
@@ -60,75 +58,5 @@
     height: auto;
     border-radius: 100px;
     box-shadow: 0 10px 25px #654321;
-    animation: slideLeft 1s ease forwards;
 }
 
-/* animations and keyframes*/
-
-.fliptext {
-    display: inline-block;
-    animation: flipIn 1s ease-in-out forwards;
-    transform-origin: center;
-}
-
-
-@keyframes flipIn {
-    0% {
-        transform: rotateX(100deg);
-        opacity: 0;
-    }
-    100% {
-        transform: rotateX(0deg);
-        opacity: 1;
-    }
-}
-
-
-
-@keyframes slideRight {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes slideLeft {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translatex(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes slideTop {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes slideBottom {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}

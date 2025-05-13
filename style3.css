@@ -1,4 +1,66 @@
-#background{
-    background-color: black;
+#background {
+    background-color: white;
+    padding: 60px 10%;
+    min-height: 100vh;
+    border: 2px red;
 }
 
+#background .title {
+    text-align: center;
+    margin-bottom: 70px;
+    color: #654321;
+}
+
+#background .title span {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.background .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+
+.background .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 40px 25px;
+    box-shadow: 0 10px 15px #654321,
+    0 0 25px #654321;
+    cursor: default;
+    color: #A08963;
+    transition: all 0.4 ease;
+}
+
+.background .boxes .box:hover{
+    background: #A08963;
+    color: #654321;
+}
+
+.background .boxes .box .icon{
+    height: 50px;
+    width: 50px;
+    background-color: #A08963;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: white;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+
+.boxes .box:hover .icon{
+    background-color: white;
+    color: #A08963;
+}
+.background .boxes .box:hover .topic,
+.background .boxes .box:hover p{ 
+    color: white;
+    transition: all 0.4s ease;
+}
